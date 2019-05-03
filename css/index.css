@@ -176,7 +176,10 @@ p {
 .header {
   border-bottom: 1px solid #F1F1F1;
   padding: 20px 0;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.9);
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 .header .header-content {
   width: 800px;
