@@ -1,3 +1,14 @@
+.btn {
+  font-family: 'Ubuntu', sans-serif;
+  color: #ffffff;
+  background-color: #22283A;
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding: 7px 18px;
+  text-align: center;
+  border-radius: 7px;
+  border: none;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -238,6 +249,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text button {
+  font-family: 'Ubuntu', sans-serif;
+  color: #ffffff;
+  background-color: #22283A;
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding: 7px 18px;
+  text-align: center;
+  border-radius: 7px;
+  border: none;
 }
 .home .walk .walk-img {
   width: 46%;
