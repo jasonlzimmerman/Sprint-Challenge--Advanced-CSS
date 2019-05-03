@@ -1,1 +1,25 @@
 // Navigation code here
+
+.header {
+    border-bottom: 1px solid @nav-border;
+    padding: 20px 0;
+    background-color: @nav-bg;
+
+    .header-content {
+        width: 800px;
+        margin: 0 auto;
+        text-align: center;
+
+            nav {
+                display: flex;
+                justify-content: center;
+                
+                a {
+                    margin: 25px 25px 0 25px;
+                    text-decoration: none;
+                    color: @nav-font;
+                    font-size: 1.7rem;
+                }
+            }    
+        }
+}
