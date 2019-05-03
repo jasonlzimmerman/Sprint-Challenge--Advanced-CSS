@@ -104,6 +104,10 @@
 
         &:hover {
           .btn(@main-button-font-color-hover, @main-button-bg-hover);
+          
+          @media @phone {
+            .mobile-view-button;
+        }
         }
       }
     }
