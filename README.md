@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website relies on specific feedback about the device being used in order to display appropriate designs related to that device’s screen size, and those layouts are usually using fixed pixels sizing; whereas, responsive design uses the size of the browser window, through media queries that create breakpoints at specific pixel widths, to render appropriately designed layouts for many different screen sizes, and they often use relative and percentage based layouts.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is currently considered the best approach for most designs. It emphasizes designing initially with the size of a mobile screen in mind, then scaling those designs up for increasingly larger screen sizes.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It makes the math easier to do with regard to the relative sizing of rem units by bringing the standard browser font size (16px) down to the equivalent of 1 rem. This means scaling up or down can be done more intuitively, for example with the 62.5% placed on the html element, 1.4 rem equated to roughly 14 pixels, 1.6 to 16 pixels, and so on.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+CSS preprocessing allows a developer to leverage the power of technologies such as LESS, which are written in a different language and have their own syntax, to make managing CSS code much easier. It increases the speed  at which a developer can code while decreasing the potential for errors, especially with larger products that may contain hundreds or thousands of line of code. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Nesting and the ability to leverage the use of variables, are the benefits that appear the most useful to me at first. These tools allow you to write a lot less code than you would otherwise, and it changes are much easier to implement. The one area I am still foggy on are mixins. Though I understand the concept, I haven’t found their application to be all that useful at this stage, but I imagine as CSS files grow larger and more complex it will become clear.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,11 +60,11 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
@@ -66,11 +76,11 @@ Follow these steps for completing your project.
 
 ### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [x] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [x] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Minimum Viable Product
 
@@ -78,7 +88,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
